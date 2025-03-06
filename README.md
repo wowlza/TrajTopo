@@ -13,7 +13,7 @@
 
 ---
 
-![method](figs/pipeline.png "Pipeline of LaneSegNet")
+![method](figs/overview.png "Pipeline of TrajTopo")
 
 <div align="center">
 <b>Overall pipeline of LaneSegNet</b>
