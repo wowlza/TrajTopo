@@ -18,21 +18,34 @@
 <div align="center">
 <b>Overall pipeline of LaneSegNet</b>
 </div>
-
+<!-- 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Prepare Dataset](#prepare-dataset)
 - [Train and Evaluate](#train-and-evaluate)
 - [License and Citation](#license-and-citation)
+ -->
 
-
-## Prerequisites
+<!-- ## Prerequisites
 
 - Linux
 - Python 3.8.x
 - NVIDIA GPU + CUDA 11.1
-- PyTorch 1.9.1
+- PyTorch 1.9.1 -->
+
+## Get Trajectory data from Argoverse2
+The pipeline consists of the following steps:
+
+1. **Extract CSV files from Argoverse2**:  
+   Run `TrajTopo/get_traj_from_src/get_csv_from_argv2.py` to extract trajectory data from Argoverse2 and save it as CSV files.
+
+2. **Convert CSV to PKL**:  
+   Run `TrajTopo/get_traj_from_src/csv-pkl.py` to consolidate the CSV files into a single PKL file.
+
+3. **Generate JSON files**:  
+   Use the provided `process_city_data.py` script to process the PKL file and generate the final JSON files.
+
 
 ## Trajectory Data Process
 
@@ -67,7 +80,7 @@ python trajectory_process/cluster_trajectory/KMeans_main_multi_process.py
 
 
 
-## Installation
+<!-- ## Installation
 
 We recommend using [conda](https://docs.conda.io/en/latest/miniconda.html) to run the code.
 ```bash
@@ -97,7 +110,7 @@ pip install -r requirements.txt
 
 Following [OpenLane-V2 repo](https://github.com/OpenDriveLab/OpenLane-V2/blob/v2.1.0/data) to download the **Image** and the **Map Element Bucket** data. Run the following script to collect data for this repo. 
 
-## Train and Evaluate
+## Train and Evaluate -->
 
 
 
