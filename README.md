@@ -34,6 +34,39 @@
 - NVIDIA GPU + CUDA 11.1
 - PyTorch 1.9.1
 
+## Trajectory Data Process
+
+This module provides tools for processing trajectory data, including **Rasterize Process** and **Vectorize Process**. Below are the details and instructions for running each part.
+
+---
+
+### 1. Rasterize Process
+
+The Rasterize Process converts trajectory data into a heatmap representation.
+
+Run the following Python script:
+```
+python trajectory_process/raster_trajectory/trajectory_raster_heatmap.py
+```
+
+### 2. Vectorize Process
+The Vectorize Process clusters trajectory data using different algorithms. Two algorithms are supported: **FarSampling** and **KMeans**.
+
+#### (1) FarSampling Algorithm
+Run the following Python script:
+```
+python trajectory_process/cluster_trajectory/far_sample_multi_process.py
+```
+
+#### (2) KMeans Algorithm
+Run the following Python script:
+```
+python trajectory_process/cluster_trajectory/KMeans_main_multi_process.py
+```
+
+
+
+
 ## Installation
 
 We recommend using [conda](https://docs.conda.io/en/latest/miniconda.html) to run the code.
