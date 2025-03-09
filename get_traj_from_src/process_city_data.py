@@ -11,13 +11,13 @@ from nuscenes.eval.common.utils import quaternion_yaw, Quaternion
 from maptr_av2_utils1 import VectorizedAV2LocalMap
 
 CONFIG = {
-    "pkl_path_template": "/data/pkl/{city_name}-csv.pkl",
-    "map_data_path": "/data/OpenLane-V2/data_dict_subset_A_val.pkl",
-    "log_id_info_path": "/home/jpj/lzy/output/log_id_info_val.json",
-    "output_root": "/home/jpj/lzy/output",
-    "pc_range": [-100, -50, -2.0, 100.0, 50.0, 2.0],
-    "map_classes": ['divider', 'ped_crossing', 'boundary'],
-    "fixed_ptsnum_per_line": 20
+"pkl_path_template": "data/pkl/{city_name}-csv.pkl",
+"map_data_path": "data/OpenLane-V2/data_dict_subset_A_val.pkl",
+"log_id_info_path": "output/log_id_info_val.json",
+"output_root": "output",
+"pc_range": [-100, -50, -2.0, 100.0, 50.0, 2.0],
+"map_classes": ['divider', 'ped_crossing', 'boundary'],
+"fixed_ptsnum_per_line": 20
 }
 
 class CityDataProcessor:
