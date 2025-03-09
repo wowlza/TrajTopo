@@ -43,7 +43,10 @@ The pipeline consists of the following steps:
 2. **Convert CSV to PKL**:  
    Run `TrajTopo/get_traj_from_src/csv-pkl.py` to consolidate the CSV files into a single PKL file.
 
-3. **Generate JSON files**:  
+3. **Get log id info**:  
+   Run `TrajTopo\get_traj_from_src\get_city_log_id_info.py` to get the log info.
+
+4. **Generate JSON files**:  
    Use the provided `process_city_data.py` script to process the PKL file and generate the final JSON files.
 
 
